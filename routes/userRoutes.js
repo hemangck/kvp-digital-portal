@@ -67,7 +67,5 @@ router
 .get(isLoggedIn, wrapAsync(userController.renderMisResults))
 .post(isLoggedIn, wrapAsync(userController.renderMisResults));
 
-// ffdfd
-
 
 module.exports = router;
