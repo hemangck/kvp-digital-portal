@@ -8,4 +8,6 @@ router.get("/", homeController.renderHomePage);
 
 router.get("/attributions", homeController.renderAttributionsPage);
 
+// ffdfd
+
 module.exports = router;
