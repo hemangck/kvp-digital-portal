@@ -54,9 +54,6 @@ router
 .put(isLoggedIn,validateKvpData, wrapAsync(userController.updateData))
 .delete(isLoggedIn,validateKvpData,wrapAsync(userController.deleteData));
 
-// router.put("/dashboardData/crudData/manage-data/:id",isLoggedIn,validateKvpData, wrapAsync(userController.updateData));
-// router.delete("/dashboardData/crudData/manage-data/:id",isLoggedIn,validateKvpData,wrapAsync(userController.deleteData));
-
 // Route to render date page based on form details
 router.get("/dashboardData/mis",isLoggedIn, wrapAsync(userController.renderMisDates));
 router.get("/dashboardData/mis/:date",isLoggedIn, wrapAsync(userController.renderMisPage));

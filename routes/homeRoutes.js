@@ -8,7 +8,4 @@ router.get("/", homeController.renderHomePage);
 
 router.get("/attributions", homeController.renderAttributionsPage);
 
-// router.get('/signUpForm', wrapAsync(authController.renderSignupForm));
-// router.post('/signUpForm/registerMember', wrapAsync(authController.signup));
-
 module.exports = router;
